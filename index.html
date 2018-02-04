@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".menu-nav" data-offset="80">
 
     <!-- Menu da aplicação -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -33,7 +33,7 @@
           </button>          
         </div>
 
-        <div class="collapse navbar-collapse" id="menu-navegacao">
+        <div class="collapse navbar-collapse menu-nav" id="menu-navegacao">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#page-top"></a></li>
             <li>
@@ -43,13 +43,13 @@
                 <a class="" href="#portfolio">Portfolio</a>
             </li>
             <li>
-                <a class="" href="#">Quem somos</a>
+                <a class="" href="#quem-somos">Quem somos</a>
             </li>
             <li>
-                <a class="" href="#servico">localização</a>
+                <a class="" href="#localizacao">localização</a>
             </li>
             <li>
-                <a class="" href="#servico">Contato</a>
+                <a class="" href="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -97,36 +97,118 @@
     <!-- Fim Slider da Aplicação -->
 
     <!-- Serviços -->
-    <div id="servico">
-      <h1>Serviços</h1>  
-    </div>
+    <section id="servico">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="page-header">
+                  <h1>Serviços - <small>Conheça o que fazemos</small></h1>  
+              </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+              <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+              <h4>E-commerce</h4>
+              <p>Descrição do serviço apresentado</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>E-commerce</h4>
+              <p>Descrição do serviço apresentado</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>E-commerce</h4>
+              <p>Descrição do serviço apresentado</p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#" class="btn btn-info btn-lg btn-service">Clique aqui e veja todos os nossos serviços</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
     <!-- Fim Serviços -->
 
     <!-- Portfolio -->
-    <div id="portfolio">
-      <h1>Portfolio</h1>
-    </div>
+    <section id="portfolio" class="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="page-header">
+                  <h1>Portfolio - <small>Conheça nossos trabalhos</small></h1>
+              </div>
+            </div>
+        </div>  
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="imgs/foto.jpg" alt="img-responsive" class="img-rounded">
+            <h4>Nome do Cliente</h4>
+        </div>        
+      </div>        
+    </section>
     <!-- Fim Portfólio -->
 
     <!-- Quem Somos -->
-    <div id="quem-somos">
-      <h1>Quem Somos</h1>    
-    </div>
+    <section id="quem-somos">
+      <div class="container">
+        <div class="col-xs-12">
+          <div class="page-header">
+              <h1>Quem Somos - <small>Conheça nossa história</small></h1>    
+          </div>
+        </div>
+      </div>      
+    </section>
     <!-- Fim Quem Somos -->
 
     <!-- Localização -->
-    <div id="localizacao">
-      <h1>Localização</h1>
-    </div>
+    <section id="localizacao" class="background">
+      <div class="container">
+        <div class="col-xs-12">
+          <div class="page-header">
+              <h1>Localização - <small>Veja onde estamos</small></h1>
+          </div>
+        </div>
+      </div>      
+    </section>
     <!-- Fim Localização -->
 
     <!-- Contato -->
-    <div id="contato">
-      <h1>Contato</h1>
-    </div>
+    <section id="contato">
+      <div class="container">
+        <div class="col-xs-12">
+          <div class="page-header">
+              <h1>Contato - <small>Fale conosco</small></h1>
+          </div>
+        </div>
+      </div>      
+    </section>
     <!-- Fim Contato -->
 
-    <footer>
+    <hr>
+    <footer class="text-center">
         Rodapé da pagina
     </footer>
     
@@ -134,5 +216,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>  
 </html>

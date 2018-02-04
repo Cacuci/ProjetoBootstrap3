@@ -7,6 +7,12 @@ body {
     padding-top: 50px;
 }
 
+section {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    min-height: 95vh;
+}
+
 .navbar-brand {
     font-weight: 700;
 }
@@ -15,4 +21,12 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     background: url(../imgs/bgslider.png);
+}
+
+.background {
+    background: whitesmoke;
+}
+
+.btn-service {
+    margin-top: 100px;
 }
